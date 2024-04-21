@@ -28,7 +28,7 @@ describe("GET /api/products/:id", () => {
         "/api/products/661fdd741595e378925b0879"
       );
       expect(res.statusCode).toBe(200);
-      expect(res.body.name).toBe("Product 1");
+      expect(res.body.name).toBe("airpods");
     });
   });
   
