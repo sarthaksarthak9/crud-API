@@ -90,18 +90,12 @@ describe("PUT /api/products/:id", () => {
       // Insert a sample product into the database
       // const sampleProduct = await Product.create({ name: "ZenZ", quantity: 10, price: 100 });
 
-      const updatedProductData = {
-          name: "Updated Product",
-          quantity: 20,
-          price: 200
-      };
-
       const res = await request(app)
-          .patch("/api/products/662399b3e24d0c5ecc531e0d")
-          .send(updatedProductData);
+          .put("/api/products/662399b3e24d0c5ecc531e0d")
+          .send({quantity : 20 },{price : 10000});
 
       expect(res.statusCode).toBe(200);
-      expect(res.body.name).toBe("Updated Product");
+      expect(res.body.quantity).toBe(20);
   });
 
   it("should return 404 if product ID does not exist", async () => {
