@@ -20,6 +20,7 @@
     "moongoose": "^0.0.5"
   },
   "devDependencies": {
+    "import-local": "^3.1.0",
     "jest": "^29.7.0",
     "nodemon": "^3.0.3",
     "supertest": "^6.3.4"
