@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles && jest --coverage --collectCoverageFrom='src/**/*.{js,jsx}'",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@keploy/sdk": "^2.0.4",
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
