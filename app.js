@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
   res.send("Hello from Node API Server Updated");
 });
 
-// connectDB(process.env.MONGODB_URL);
+connectDB(process.env.MONGODB_URL);
 
 module.exports = app;

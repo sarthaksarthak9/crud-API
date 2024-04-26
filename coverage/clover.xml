@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1713769512755" clover="3.2.0">
-  <project timestamp="1713769512755" name="All files">
-    <metrics statements="68" coveredstatements="64" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="6" elements="79" coveredelements="72" complexity="0" loc="68" ncloc="68" packages="5" files="5" classes="5"/>
-    <package name="simple-crud-app-backend">
+<coverage generated="1713885847316" clover="3.2.0">
+  <project timestamp="1713885847316" name="All files">
+    <metrics statements="68" coveredstatements="63" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="6" elements="79" coveredelements="71" complexity="0" loc="68" ncloc="68" packages="5" files="5" classes="5"/>
+    <package name="crud-API">
       <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="app.js" path="/home/sarthak/Documents/simple-crud-app-backend/app.js">
+      <file name="app.js" path="/home/sarthak/crud-API/app.js">
         <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -22,16 +22,16 @@
         <line num="23" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="simple-crud-app-backend.controllers">
-      <metrics statements="35" coveredstatements="32" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
-      <file name="product.controller.js" path="/home/sarthak/Documents/simple-crud-app-backend/controllers/product.controller.js">
-        <metrics statements="35" coveredstatements="32" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+    <package name="crud-API.controllers">
+      <metrics statements="35" coveredstatements="31" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="product.controller.js" path="/home/sarthak/crud-API/controllers/product.controller.js">
+        <metrics statements="35" coveredstatements="31" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
@@ -63,9 +63,9 @@
         <line num="64" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="simple-crud-app-backend.db">
+    <package name="crud-API.db">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="connect.js" path="/home/sarthak/Documents/simple-crud-app-backend/db/connect.js">
+      <file name="connect.js" path="/home/sarthak/crud-API/db/connect.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -74,9 +74,9 @@
         <line num="8" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="simple-crud-app-backend.models">
+    <package name="crud-API.models">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="product.model.js" path="/home/sarthak/Documents/simple-crud-app-backend/models/product.model.js">
+      <file name="product.model.js" path="/home/sarthak/crud-API/models/product.model.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -84,9 +84,9 @@
         <line num="35" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="simple-crud-app-backend.routes">
+    <package name="crud-API.routes">
       <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="product.route.js" path="/home/sarthak/Documents/simple-crud-app-backend/routes/product.route.js">
+      <file name="product.route.js" path="/home/sarthak/crud-API/routes/product.route.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

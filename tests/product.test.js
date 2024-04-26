@@ -36,17 +36,17 @@ describe("GET /api/products", () => {
 describe("GET /api/products/:id", () => {
     it("should return a product", async () => {
       const res = await request(app).get(
-        "/api/products/6623bca25d5fde658a92acca"
+        "/api/products/661fdd741595e378925b087d"
       );
       expect(res.statusCode).toBe(200);
-      expect(res.body.name).toBe("airpods");
+      expect(res.body.name).toBe("lava");
     });
 
     it("should return 500 if an error occurs", async () => {
       // Disconnect from the database to force an error
       await mongoose.disconnect();
 
-      const res = await request(app).get("/api/products/6623bca25d5fde658a92acca");
+      const res = await request(app).get("/api/products/66252004d297ba96df87ba4a");
 
       expect(res.statusCode).toBe(500);
       expect(res.body).toHaveProperty("message");
@@ -80,7 +80,7 @@ describe("POST /api/products", () => {
         });
 
       expect(res.statusCode).toBe(500);
-      expect(res.body.name).toBe("iPad");
+      expect(res.body.quantity).toBe(4);
     });
 });
 
@@ -110,14 +110,14 @@ describe("PUT /api/products/:id", () => {
 describe("DELETE /api/products/:id", () => {
     it("should delete a product", async () => {
       const res = await request(app).delete(
-        "/api/products/6623bb20918f9d2584a9e056"
+        "/api/products/6627cf60e07904852930e0e8"
       );
       expect(res.statusCode).toBe(200);
     });
 
     it("should return 404 if product ID does not exist", async () => {
      
-      const res = await request(app).delete("/api/products/6068b2447917f4b3f089cc35");
+      const res = await request(app).delete("/api/products/6627cf60e07904852930e0e8");
 
       // Assertions
       expect(res.statusCode).toBe(404);
@@ -128,7 +128,7 @@ describe("DELETE /api/products/:id", () => {
         // Disconnect from the database to force an error
         await mongoose.disconnect();
 
-        const res = await request(app).delete("/api/products/6623bb20918f9d2584a9e056");
+        const res = await request(app).delete("/api/products/6627cf60e07904852930e0e8");
 
         // Assertions
         expect(res.statusCode).toBe(500);

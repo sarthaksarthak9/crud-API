@@ -12,7 +12,7 @@ spec:
             Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
             Accept-Encoding: gzip, deflate, br
             Accept-Language: en-GB,en
-            Connection: keep-alive
+            Connection: keep-alived
             Host: localhost:3000
             If-None-Match: W/"22-1zTtRKCtWDH+a9AlmEC9xS1mvKM"
             Sec-Ch-Ua: '"Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"'
